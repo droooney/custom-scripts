@@ -1,12 +1,12 @@
 // ==UserScript==
-// @name         New Userscript
+// @name         Dark Mode Switcher
 // @namespace    http://tampermonkey.net/
 // @version      1.0.0
-// @updateURL    https://raw.githubusercontent.com/droooney/custom-scripts/refs/heads/master/yandex-mail-theme.js
-// @downloadURL  https://raw.githubusercontent.com/droooney/custom-scripts/refs/heads/master/yandex-mail-theme.js
-// @description  try to take over the world!
-// @author       You
-// @include      https://mail.yandex.com
+// @updateURL    https://raw.githubusercontent.com/droooney/custom-scripts/refs/heads/master/yandex-mail-dark-mode-switcher.js
+// @downloadURL  https://raw.githubusercontent.com/droooney/custom-scripts/refs/heads/master/yandex-mail-dark-mode-switcher.js
+// @description  Switches dark mode depending on the system dark mode
+// @author       droooney
+// @include      https://mail.yandex.com/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=yandex.com
 // @grant        none
 // ==/UserScript==
@@ -24,7 +24,7 @@
 
       const check = () => {
         try {
-          if (++tries > 100) {
+          if (++tries > 1000) {
             throw new Error('Timeout');
           }
 
