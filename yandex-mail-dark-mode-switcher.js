@@ -52,7 +52,7 @@
 
     await poll(() => document.querySelector('[data-testid="settings-popup"]'));
 
-    const cards = [...document.querySelectorAll('[class*="ThemesWithScope__card"]')];
+    const cards = [...document.querySelectorAll('[class*="SettingsThemesScope__card"]')];
     const card = isDarkMode ? cards.at(2) : cards.at(0);
 
     card?.click();
